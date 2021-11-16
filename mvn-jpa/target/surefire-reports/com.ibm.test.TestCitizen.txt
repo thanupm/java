@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.test.TestCitizen
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.148 s <<< FAILURE! - in com.ibm.test.TestCitizen
+testAdd  Time elapsed: 0.016 s  <<< ERROR!
+javax.persistence.RollbackException: Error while committing the transaction
+	at com.ibm.test.TestCitizen.testAdd(TestCitizen.java:24)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.ibm.test.TestCitizen.testAdd(TestCitizen.java:24)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.ibm.test.TestCitizen.testAdd(TestCitizen.java:24)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'India-123456' for key 'citizen.PRIMARY'
+	at com.ibm.test.TestCitizen.testAdd(TestCitizen.java:24)
+

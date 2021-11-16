@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.test.TestMovie
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.175 s <<< FAILURE! - in com.ibm.test.TestMovie
+testSetMovieToMultiplex  Time elapsed: 0.021 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.ibm.test.TestMovie.testSetMovieToMultiplex(TestMovie.java:42)
+
+testFindMovie  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at com.ibm.test.TestMovie.testFindMovie(TestMovie.java:48)
+
